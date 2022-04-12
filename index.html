@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  
   <header class="hero is-small is-link">
     <div class="hero-body has-text-centered">
       <p class="title">
@@ -22,9 +23,11 @@
       </p>
     </div>
   </header>
+  
   <main class="container section">
-    <div class="table-container">
-      <table class="table m-auto" id="userTableInfo">
+    <p id="loadingDisplay" class="has-text-centered my-2">Loading User Data...</p>
+    <div class="table-container table-border">
+      <table class="table m-auto" id="userTable">
         <thead>
           <tr>
             <th>ID</th>
@@ -56,33 +59,20 @@
           </tr>
         </tfoot>
         <tbody id="userTableInfo">
-          <tr>
-            <th>1</th>
-            <th><a class="js-modal-trigger" data-target="PostDisplay">Leanne Graham</a></th>
-            <td>Bret</td>
-            <td>Sincere@april.biz</td>
-            <td>Kulas Light, Apt. 556, Gwenborough, 92998-3874</td>
-            <td>1-770-736-8031 x56442</td>
-            <td>hildegard.org</td>
-            <td>Romaguera-Crona</td>
-            <td>Multi-layered client-server neural-net</td>
-            <td>harness real-time e-markets</td>
-            <th><a class="js-modal-trigger" data-target="PostDisplay">See Posts</a></th>
-          </tr>
         </tbody>
       </table>
     </div>
   </main>
   
-  <div id="PostDisplay" class="modal">
+  <div id="postModal" class="modal">
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
-        <p class="modal-card-title has-text-centered">Bret Posts</p>
+        <p id="postNameDisplay" class="modal-card-title has-text-centered">Bret Posts</p>
         <button class="delete" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
-        <div class="content">
+        <div id="postDisplay" class="content">
           <hr>
           <h4>sunt aut facere repellat provident occaecati excepturi optio reprehenderit</h4>
           <p>quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto</p>
