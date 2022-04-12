@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Bulma JqueryUI Base</title>
+</head>
+
+<body>
+  <header class="hero is-small is-link">
+    <div class="hero-body has-text-centered">
+      <p class="title">
+        Ksense Take-Home Challenge!
+      </p>
+      <p class="subtitle">
+        User and post display
+      </p>
+    </div>
+  </header>
+  <main class="container section">
+    <div class="table-container">
+      <table class="table m-auto" id="userTableInfo">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Phone</th>
+            <th>Website</th>
+            <th>Company</th>
+            <th>Catchphrase</th>
+            <th>bs</th>
+            <th>Posts</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Phone</th>
+            <th>Website</th>
+            <th>Company</th>
+            <th>Catchphrase</th>
+            <th>bs</th>
+            <th>Posts</th>
+          </tr>
+        </tfoot>
+        <tbody id="userTableInfo">
+          <tr>
+            <th>1</th>
+            <th><a class="js-modal-trigger" data-target="PostDisplay">Leanne Graham</a></th>
+            <td>Bret</td>
+            <td>Sincere@april.biz</td>
+            <td>Kulas Light, Apt. 556, Gwenborough, 92998-3874</td>
+            <td>1-770-736-8031 x56442</td>
+            <td>hildegard.org</td>
+            <td>Romaguera-Crona</td>
+            <td>Multi-layered client-server neural-net</td>
+            <td>harness real-time e-markets</td>
+            <th><a class="js-modal-trigger" data-target="PostDisplay">See Posts</a></th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  
+  <div id="PostDisplay" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title has-text-centered">Bret Posts</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="content">
+          <hr>
+          <h4>sunt aut facere repellat provident occaecati excepturi optio reprehenderit</h4>
+          <p>quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto</p>
+          <hr>
+          <h4>qui est esse</h4>
+          <p>est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla</p>
+          <hr>
+        </div>
+      </section>
+      <footer class="modal-card-foot has-text-centered">
+      </footer>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="./assets/js/script.js"></script>
+</body>
+
+</html>
